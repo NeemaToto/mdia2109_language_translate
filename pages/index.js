@@ -35,6 +35,30 @@ export default function Home({ dir }) {
       </header>
 
       <main dir={dir} className={styles.main}>
+        <div className={styles.navBar}>
+          <div className={styles.navBarTop}>
+            <div className={styles.navBarTop__links}>
+              <p>
+                <FormattedMessage id='page.home.navBarTopLinks.learningHub'/>
+              </p>
+              <p>
+                <FormattedMessage id='page.home.navBarTopLinks.myBcit'/>
+              </p>
+              <p>
+                <FormattedMessage id='page.home.navBarTopLinks.students'/>
+              </p>
+              <p>
+                <FormattedMessage id='page.home.navBarTopLinks.staff'/>
+              </p>
+              <p>
+                <FormattedMessage id='page.home.navBarTopLinks.events'/>
+              </p>
+            </div>
+          </div>
+          <div className={styles.navBarBottom}>
+            <Image src='/../public/BCIT_logo.png' width={50} height={50}/>
+          </div>
+        </div>
         <h1>
           <FormattedMessage id='page.home.title' values={{ b: (info) => <b>{info}</b> }} />
         </h1>
